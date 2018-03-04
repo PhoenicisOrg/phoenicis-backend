@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Phoenicis</title>
+    <meta name="description" content="Phoenicis website">
+    <meta name="author" content="Quentin PÂRIS">
+    <base href="/">
+    <script src="static/frontend.bundle.js"></script>
+
+</head>
+
+<body ng-app="PhoenicisWebsite">
+
+<nav class="navbar navbar-default">
+    <div class="mask">
+
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/">
+                    <img class="logo" src="ui/phoenicis.svg" alt="Phoenicis">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/apps">Supported apps</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container" ng-view>
+
+</div>
+</body>
+</html>
