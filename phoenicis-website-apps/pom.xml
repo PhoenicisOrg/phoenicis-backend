@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>phoenicis-website</artifactId>
+        <groupId>org.phoenicis</groupId>
+        <version>1.0</version>
+    </parent>
+
+    <properties>
+        <phoenicis.version>5.0-SNAPSHOT</phoenicis.version>
+    </properties>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>phoenicis-website-apps</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.phoenicis</groupId>
+            <artifactId>phoenicis-library</artifactId>
+            <version>${phoenicis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.phoenicis</groupId>
+            <artifactId>phoenicis-repository</artifactId>
+            <version>${phoenicis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.phoenicis</groupId>
+            <artifactId>phoenicis-website-configuration</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+    </dependencies>
+</project>

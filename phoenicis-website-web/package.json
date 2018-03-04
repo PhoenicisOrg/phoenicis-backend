@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-route": "1.6.4",
+    "angular-resource": "1.6.4",
+    "angular-animate": "1.6.4",
+    "angular-sanitize": "1.6.4",
+    "angular-drag-and-drop-lists": "2.1.0",
+    "bootstrap-css": "3.3.7",
+    "roboto-npm-webfont": "0.0.2",
+    "font-awesome": "4.7.0",
+    "font-awesome-sass-loader": "2.0.1",
+    "angular-bootstrap-npm": "0.14.3"
+  },
+  "devDependencies": {
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "css-loader": "^0.17.0",
+    "url-loader": "^0.5.8",
+    "file-loader": "^0.11.1",
+    "webpack": "^2.2.0"
+  }
+}
