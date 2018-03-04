@@ -1,0 +1,12 @@
+<h1>News</h1>
+<p class="intro">Last news of the project</p>
+
+<div class="col-md-4" ng-repeat="i in 3 | times">
+    <div class="material newsCard" ng-repeat="newsItem in newsItems" ng-if="newsItem.language == currentLocale && $index % 3 == i">
+        <h2 ng-bind-html="newsItem.title"></h2>
+        <p class="date">{{ newsItem.date | date:'dd/MM/yyyy' }}</p>
+        <div class="miniature"><img ng-if="newsItem.content | bbdecode | fetchImageUrl" src="{{ newsItem.content | bbdecode | fetchImageUrl }}"></div>
+
+        <p ng-bind-html="newsItem.content | bbdecode | stripTags | smallish: 300"></p>
+    </div>
+</div>

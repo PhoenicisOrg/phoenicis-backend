@@ -1,0 +1,43 @@
+div.home {
+  background-image: url("/ui/phoenicis.jpg");
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-size: 100% 100%;
+
+  > .col-md-6 {
+    display: table;
+    height: 100%;
+    text-align: center;
+
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  > .story {
+    h1, p.intro {
+      text-align: left;
+    }
+
+    p.more {
+      text-align: right;
+      margin-right:20px;
+      a {
+        color:#FFF;
+      }
+    }
+
+    * {
+      color:#333;
+    }
+  }
+  .main-screenshot {
+    width: 80%;
+  }
+}

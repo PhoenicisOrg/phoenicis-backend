@@ -1,0 +1,48 @@
+div.categories {
+  text-align:center;
+
+  div.category {
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+
+    img {
+      width: 64px;
+    }
+
+    p.name {
+      margin: 5px;
+    }
+
+    a {
+      color: #333;
+    }
+  }
+}
+
+div.categoryContent {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+
+  div.application {
+    width: 180px;
+    height: 160px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+
+    img {
+      width: 80%;
+    }
+
+    p.name {
+      margin: 5px;
+      font-size: 12px;
+      height: 20px;
+      display: block;
+      overflow: hidden;
+    }
+  }
+}

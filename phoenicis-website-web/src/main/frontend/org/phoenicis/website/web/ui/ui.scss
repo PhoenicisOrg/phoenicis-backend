@@ -1,0 +1,61 @@
+body, html {
+  width:100%;
+  height:100%;
+}
+body {
+  background-color: #FFFFFF;
+  font-family: Roboto;
+}
+
+.material {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  text-align: center;
+  font-family: roboto;
+  font-weight: 300;
+  color: #333;
+  font-size: 40px;
+}
+
+p.intro {
+  font-family: roboto;
+  text-align: center;
+  color: #999;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.navbar {
+  border:0;
+
+  .logo {
+    height:35px;
+    margin:7px;
+  }
+
+  .mask, .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .mask {
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.75;
+  }
+
+  .content {
+    z-index: 2;
+  }
+
+  .navbar-nav > li > a {
+    color:#FFF;
+  }
+}

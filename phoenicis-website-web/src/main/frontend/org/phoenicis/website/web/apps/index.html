@@ -1,0 +1,17 @@
+<h1>Supported apps</h1>
+<p class="intro">What apps phoenicis supports so far</p>
+
+<div class="categories">
+    <div class="category" ng-repeat="category in categories" ng-if="category.type == 'INSTALLERS'">
+        <a href="/apps/{{category.name | lowercase}}"><img src="{{category.icon}}" alt="{{category.name}}"></a>
+        <a href="/apps/{{category.name | lowercase}}"><p class="name">{{category.name}}</p></a>
+    </div>
+</div>
+
+<div ng-if="selectedCategory" class="categoryContent">
+    <div ng-repeat="application in selectedCategory.applications" class="application">
+        <img ng-if="application.miniatures.length > 0" src="{{ application.miniatures[0] }}"
+             alt="{{ application.name }}">
+        <p class="name"> {{ application.name }} </p>
+    </div>
+</div>
