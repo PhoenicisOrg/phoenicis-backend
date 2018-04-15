@@ -18,7 +18,7 @@ public class WebsiteRepositoryLoader implements RepositoryLocationLoader {
             return Collections.singletonList(
                     new GitRepositoryLocation.Builder()
                             .withBranch("master")
-                            .withGitRepositoryUri(new URI("https://github.com/PlayOnLinux/Scripts"))
+                            .withGitRepositoryUri(new URI("https://github.com/PhoenicisOrg/scripts"))
                             .build()
             );
         } catch (URISyntaxException e) {
