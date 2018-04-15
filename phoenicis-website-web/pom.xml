@@ -96,7 +96,9 @@
                 <configuration>
                     <filesets>
                         <fileset>
-                            <directory>${phoencis.website.root}/phoenicis-website-web/src/main/resources/org/phoenicis/website/web/static</directory>
+                            <directory>
+                                ${phoencis.website.root}/phoenicis-website-web/src/main/resources/org/phoenicis/website/web/static
+                            </directory>
                         </fileset>
                     </filesets>
                 </configuration>
@@ -153,16 +155,42 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${phoencis.website.root}/phoenicis-website-web/target/classes/org/phoenicis/website/web</outputDirectory>
+                            <outputDirectory>
+                                ${phoencis.website.root}/phoenicis-website-web/target/classes/org/phoenicis/website/web
+                            </outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${phoencis.website.root}/phoenicis-website-web/src/main/resources/org/phoenicis/website/web/static</directory>
+                                    <directory>
+                                        ${phoencis.website.root}/phoenicis-website-web/src/main/resources/org/phoenicis/website/web/static
+                                    </directory>
                                     <filtering>false</filtering>
                                 </resource>
                             </resources>
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <targetPath>WEB-INF</targetPath>
+                            <directory>src/main/resources/org/phoenicis/website/web/WEB-INF</directory>
+                            <filtering>true</filtering>
+                            <includes>
+                                <include>*.xml</include>"
+                            </includes>
+                        </resource>
+
+                        <resource>
+                            <directory>src/main/resources/org/phoenicis/website/web/static</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
             </plugin>
 
         </plugins>
