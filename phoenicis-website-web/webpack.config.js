@@ -42,11 +42,7 @@ config = {
                 loader: "file-loader"
             },
             {
-                test: /\.(png|jpg)$/,
-                loader: 'url-loader?limit=100000'
-            },
-            {
-                test: /\.(html)|logo\.svg$/,
+                test: /\.(html|png|jpg)|phoenicis\.svg$/,
                 loader: "file-loader",
                 options: {
                     context: path.resolve(__dirname, "src/main/frontend/org/phoenicis/website/web"),
