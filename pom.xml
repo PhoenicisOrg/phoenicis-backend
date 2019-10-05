@@ -11,7 +11,7 @@
 
     <properties>
         <spring.version>5.2.0.RELEASE</spring.version>
-        <jackson.version>2.9.9</jackson.version>
+        <jackson.version>2.10.0</jackson.version>
         <phoencis.website.root>${basedir}</phoencis.website.root>
     </properties>
 
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.26</version>
+            <version>1.7.28</version>
         </dependency>
 
         <dependency>
