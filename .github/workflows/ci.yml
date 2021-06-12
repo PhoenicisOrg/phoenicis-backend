@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: PhoenicisOrg/phoenicis
-          ref: refs/tags/release/v5.0-alpha.3
+          ref: refs/tags/v5.0-alpha.3
           path: ./phoenicis
       - name: Build and install phoenicis
         run: cd ./phoenicis && mvn -DskipTests clean install
