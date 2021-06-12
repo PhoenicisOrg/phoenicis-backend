@@ -14,7 +14,7 @@ jobs:
       - name: Checkout phoenicis
         uses: actions/checkout@master
         with:
-          name: PhoenicisOrg/phoenicis
+          repository: PhoenicisOrg/phoenicis
           path: ./phoenicis
       - name: Build and install phoenicis
         run: cd ./phoenicis && mvn clean install
