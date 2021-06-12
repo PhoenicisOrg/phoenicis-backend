@@ -9,7 +9,7 @@
     </parent>
 
     <properties>
-        <phoenicis.version>5.0-SNAPSHOT</phoenicis.version>
+        <phoenicis.version>5.0-alpha-3</phoenicis.version>
     </properties>
 
     <modelVersion>4.0.0</modelVersion>

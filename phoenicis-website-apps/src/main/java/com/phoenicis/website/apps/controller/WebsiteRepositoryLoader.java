@@ -3,7 +3,7 @@ package com.phoenicis.website.apps.controller;
 import org.phoenicis.repository.RepositoryLocationLoader;
 import org.phoenicis.repository.location.GitRepositoryLocation;
 import org.phoenicis.repository.location.RepositoryLocation;
-import org.phoenicis.repository.repositoryTypes.Repository;
+import org.phoenicis.repository.types.Repository;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -12,6 +12,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class WebsiteRepositoryLoader implements RepositoryLocationLoader {
+    @Override
+    public List<RepositoryLocation<? extends Repository>> getDefaultRepositoryLocations() {
+        return Collections.emptyList();
+    }
+
     @Override
     public List<RepositoryLocation<? extends Repository>> loadRepositoryLocations() {
         try {
