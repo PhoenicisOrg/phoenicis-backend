@@ -13,6 +13,11 @@ import java.util.List;
 
 public class WebsiteRepositoryLoader implements RepositoryLocationLoader {
     @Override
+    public List<RepositoryLocation<? extends Repository>> getDefaultRepositoryLocations() {
+        return Collections.emptyList();
+    }
+
+    @Override
     public List<RepositoryLocation<? extends Repository>> loadRepositoryLocations() {
         try {
             return Collections.singletonList(
