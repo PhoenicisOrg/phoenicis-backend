@@ -15,9 +15,10 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: PhoenicisOrg/phoenicis
+          ref: refs/tags/release/v5.0-alpha.3
           path: ./phoenicis
       - name: Build and install phoenicis
-        run: cd ./phoenicis && mvn clean install
+        run: cd ./phoenicis && mvn -DskipTests clean install
           
       - name: Checkout phoenicis-backend
         uses: actions/checkout@v2
