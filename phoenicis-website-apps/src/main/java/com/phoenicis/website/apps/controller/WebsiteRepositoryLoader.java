@@ -3,7 +3,7 @@ package com.phoenicis.website.apps.controller;
 import org.phoenicis.repository.RepositoryLocationLoader;
 import org.phoenicis.repository.location.GitRepositoryLocation;
 import org.phoenicis.repository.location.RepositoryLocation;
-import org.phoenicis.repository.repositoryTypes.Repository;
+import org.phoenicis.repository.types.Repository;
 
 import java.net.URI;
 import java.net.URISyntaxException;
