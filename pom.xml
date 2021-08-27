@@ -11,7 +11,7 @@
 
     <properties>
         <spring.version>5.3.9</spring.version>
-        <jackson.version>2.12.4</jackson.version>
+        <jackson.version>2.12.5</jackson.version>
         <phoencis.website.root>${basedir}</phoencis.website.root>
     </properties>
 
