@@ -9,7 +9,7 @@
     </parent>
 
     <properties>
-        <jetty.version>11.0.6</jetty.version>
+        <jetty.version>11.0.7</jetty.version>
         <webpack.arguments>-p</webpack.arguments>
         <phoencis.website.root>${basedir}/..</phoencis.website.root>
     </properties>
