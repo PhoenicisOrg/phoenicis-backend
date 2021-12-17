@@ -10,7 +10,7 @@
     <version>1.0</version>
 
     <properties>
-        <spring.version>5.3.13</spring.version>
+        <spring.version>5.3.14</spring.version>
         <jackson.version>2.13.0</jackson.version>
         <phoencis.website.root>${basedir}</phoencis.website.root>
     </properties>
